@@ -1,0 +1,136 @@
+// Basic css
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 2rem;
+	padding: 0 6rem;
+}
+
+// Mixins
+@mixin flex-center($dir) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: $dir;
+}
+
+@mixin grid-center {
+	display: grid;
+	place-items: center;
+}
+
+@mixin flow-full-body {
+	margin: 0 -6rem;
+	padding: 6rem;
+}
+
+// Responsive mixin
+$resp-phone: 600px;
+$resp-tab-land: 1200px;
+$resp-tab-port: 900px;
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == mobile {
+		@media(max-width: $resp-phone) { @content }
+	};
+	@if $breakpoint == tab-port {
+		@media(max-width: $resp-tab-port) { @content }
+	};
+	@if $breakpoint == tab-land {
+		@media(max-width: $resp-tab-land) { @content }
+	};
+}
+
+// Variables
+
+/** COLOR VARIABLES **/
+$col-pink: hsl(322, 100%, 66%);
+$col-light-pink: hsl(321, 100%, 78%);
+$col-light-red: hsl(0, 100%, 63%);
+$col-dark-cyan: hsl(192, 100%, 9%);
+$col-pale-blue: hsl(207, 100%, 98%);
+
+/** FONT VARIABLES **/
+$font-heading: 'Poppins', sans-serif;
+$font-1: 'Open Sans', sans-serif;
+
+// Typography
+.btn-nav {
+	font-family: $font-1;
+	font-size: 1.4rem;
+}
+
+.heading-primary {
+	font-family: $font-heading;
+	font-size: 4rem;
+}
+
+.hero-text {
+	font-family: $font-1;
+}
+
+.btn-primary {
+	font-family: $font-1;
+	font-weight: 600;
+	font-size: 1.8rem;
+
+	&.small {
+		font-size: 1.2rem;
+	}
+}
+
+.stat-card {
+	font-family: $font-1;
+
+	&-heading {
+		font-size: 9rem;
+		@include respond(tab-port) {
+			font-size: 7rem;
+		}
+	}
+
+	&-para {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+}
+
+section.features {
+	h1 {
+		font-family: $font-heading;
+		font-size: 3rem;
+	}
+
+	p {
+		font-family: $font-1;
+		font-size: 1.6rem;
+	}
+}
+
+section.cta {
+	font-family: $font-heading;
+}
+
+section.footer {
+	font-family: $font-1;
+
+	h4 {
+		text-transform: uppercase;
+		font-size: 1.6rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+}
+
+// functions

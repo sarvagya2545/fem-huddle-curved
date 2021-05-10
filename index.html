@@ -7,6 +7,15 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap"
+    rel="stylesheet" defer>
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/9a34e91c28.js" crossorigin="anonymous"></script>
 
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
 
@@ -24,14 +33,154 @@
 </head>
 
 <body>
-  Try it free
 
-  Build The Community Your Fans Will Love
+  <section class="nav">
+    <div class="brand">
+      <img src="./images/logo.svg" alt="LOGO" id="logo">
+    </div>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does
-  your audience. Create connections with your users as you engage in genuine discussion.
+    <div class="btn-nav">
+      Try it free
+    </div>
+  </section>
 
-  Get Started For Free
+  <section id="hero">
+    <div class="hero-content">
+      <h1 class="heading-primary">Build The Community Your Fans Will Love</h1>
+
+      <p class="hero-text">
+        Huddle re-imagines the way we build communities. You have a voice, but so does
+        your audience. Create connections with your users as you engage in genuine discussion.
+      </p>
+
+      <button class="btn-primary rounded">
+        Get Started For Free
+      </button>
+    </div>
+    <div class="hero-img">
+      <img src="./images/screen-mockups.svg" alt="screen mockups">
+    </div>
+  </section>
+
+  <section id="stat-cards">
+    <div class="stat-card">
+      <img src="./images/icon-communities.svg" alt="communities" class="stat-card-img">
+      <h1 class="stat-card-heading">
+        1.4k+
+      </h1>
+      <p class="stat-card-para">
+        Communities formed
+      </p>
+    </div>
+    <div class="stat-card">
+      <img src="./images/icon-messages.svg" alt="messages" class="stat-card-img">
+      <h1 class="stat-card-heading">
+        2.7m+
+      </h1>
+      <p class="stat-card-para">
+        Messages sent
+      </p>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-wrapper">
+      <img src="./images/bg-section-top-desktop-1.svg" alt="bg-section-top-desktop-1" class="bg-img bg-img-top">
+      <div class="feature">
+        <div class="feature-text">
+          <h1>Grow Together</h1>
+          <p>Generate meaningful discussions with your audience and build a strong, loyal community.
+            Think of the insightful conversations you miss out on with a feedback form.
+          </p>
+        </div>
+        <div class="feature-img">
+          <img src="./images/illustration-grow-together.svg" alt="grow together" />
+        </div>
+      </div>
+      <img src="./images/bg-section-bottom-desktop-1.svg" alt="bg-section-bottom-desktop-1"
+        class="bg-img bg-img-bottom">
+    </div>
+    <div class="feature-wrapper">
+      <div class="feature">
+        <div class="feature-text">
+          <h1>Flowing Conversations</h1>
+          <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+            just-in-time loading for a more natural flow.
+          </p>
+        </div>
+        <div class="feature-img">
+          <img src="./images/illustration-flowing-conversation.svg" alt="flowing conversation" />
+        </div>
+      </div>
+    </div>
+    <div class="feature-wrapper">
+      <img src="./images/bg-section-top-desktop-2.svg" alt="bg-section-top-desktop-2" class="bg-img bg-img-top">
+      <div class="feature">
+        <div class="feature-text">
+          <h1>Your Users</h1>
+          <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+            once signed in to your app, your users can start chatting immediately.
+          </p>
+        </div>
+        <div class="feature-img">
+          <img src="./images/illustration-your-users.svg" alt="your users" />
+        </div>
+      </div>
+      <img src="./images/bg-section-bottom-desktop-2.svg" alt="bg-section-bottom-desktop-2"
+        class="bg-img bg-img-bottom">
+    </div>
+  </section>
+
+
+  <section class="cta">
+    <div>
+      <h2>Ready To Build Your Community?</h2>
+      <button class="btn-primary rounded">Get Started For Free</button>
+    </div>
+  </section>
+
+  <section class="footer">
+    <img src="./images/bg-footer-top-desktop.svg" alt="bg-footer-top-desktop-1" class="bg-img">
+    <div class="footer-content">
+      <div class="details">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="logo">
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+          vestibulum a, ultrices quis sem.
+        </p>
+        <div class="contact">
+          <div class="contact-item">
+            <img src="./images/icon-phone.svg" alt="Phone">
+            <p>Phone: +1-543-123-4567</p>
+          </div>
+          <div class="contact-item">
+            <img src="./images/icon-email.svg" alt="email">
+            <p>example@huddle.com</p>
+          </div>
+        </div>
+        <div class="social">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+      </div>
+      <div class="newsletter">
+        <h4>NewsLetter</h4>
+        <p>
+          To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+          send you spam or pass on your email address
+        </p>
+        <form action="#" class="form">
+          <input type="email" class="input">
+          <button class="btn-primary small">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--
 
   1.4k+
   Communities Formed
@@ -64,7 +213,7 @@
   To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
   send you spam or pass on your email address
 
-  Subscribe
+  Subscribe -->
 
   <!-- <footer>
     <p class="attribution">
